@@ -1,0 +1,162 @@
+.gallery {
+    margin: 50px 0;
+}
+
+.gallery .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+}
+
+.dark .gallery .title {
+    color: white;
+}
+
+.gallery-inner .see-all {
+    color: #05057d;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    position: relative;
+    width: 200px;
+    cursor: pointer;
+}
+
+.see-all span {
+    position: absolute;
+    right: 15px;
+    transition: all 0.5s;
+}
+
+.see-all:hover span {
+    right: 0px;
+}
+
+.gallery-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.gallery-item {
+    position: relative;
+    transition: all 0.5s;
+}
+
+.gallery-item:hover {
+    cursor: pointer;
+    opacity: 0.8 !important;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.gallery-item:first-child {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.full {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 5000;
+}
+
+.full .exit {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+#app {
+    height: 100%
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+
+@media screen and (max-width:800px) {
+
+    .gallery-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width:512px) {
+    .gallery-inner .see-all {
+        display: none;
+    }
+
+    .gallery-items {
+        grid-template-columns: 1fr;
+        column-gap: 0px;
+    }
+
+    .gallery-item:first-child {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    
+    .hover-div .hover-title h2 {
+        font-size: 17px;
+    }
+
+    .hover-title svg {
+        width: 50px;
+    }
+}
+
+@media screen and (max-width:433px) {
+    .img-btm {
+        display: flex;
+        gap: 2px !important;
+        flex-direction: column;
+    }
+
+    .news-text {
+        position: absolute;
+        bottom: 15px;
+        left: 12px;
+        color: white;
+    }
+}

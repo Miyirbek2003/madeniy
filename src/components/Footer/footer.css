@@ -1,0 +1,88 @@
+footer {
+    background-image: url('https://www.madaniymeros.uz/img/Naqish.5bbda8da.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #e5ebeb;
+    padding: 25px 0;
+}
+
+.footer-title span {
+    padding-bottom: 13px;
+    color: #05057d;
+    font-size: 18px;
+    border-bottom: 1px solid rgba(1, 1, 28, .2);
+    font-weight: 600;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.link span {
+    padding-bottom: 13px;
+    color: #05057d;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.link ul li {
+    padding: 5px 0;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact span {
+    cursor: pointer;
+}
+
+
+.phone {
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.title-phone {
+    color: #05057d;
+    font-size: 22px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.phone li {
+    padding: 5px 0;
+    font-weight: 500;
+}
+
+.dark footer, .dark .phone {
+    background-color: #333;
+
+}
+
+.dark .footer-title span, .dark .link span, .dark .title-phone{
+    color: white;
+}
+
+
+@media screen and (max-width:768px) {
+    .footer-content {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:502px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}

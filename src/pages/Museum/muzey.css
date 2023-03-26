@@ -1,0 +1,149 @@
+.muzey {
+    padding: 25px 0;
+    background: #f6f6f9;
+}
+
+.title-m {
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+.muzey-content {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.muzey-inner div {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.muzey-inner img {
+    border-radius: 8px;
+}
+
+.muzey-inner {
+    width: 100%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    line-height: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.side-bar {
+    width: 20%;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    height: min-content;
+}
+
+.side-bar .side-title {
+    font-size: 30px;
+    border-bottom: 1px solid #ececec;
+    padding-bottom: 15px;
+}
+
+.side-bar li {
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+.side-bar li:hover {
+    color: #1dbb95;
+}
+
+.muzey-right {
+    width: 80%;
+}
+
+.contact-m {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    gap: 25px;
+}
+
+.contact-m span svg {
+    color: #05057d;
+}
+
+.contact-m span {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.dark .side-bar,
+.dark .muzey-inner,
+.dark .muzey,
+.dark .contact-m {
+    background-color: #333;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+
+}
+
+.dark .contact-m span svg{
+    color: white;
+}
+
+@media screen and (max-width:1019px) {
+    .side-bar {
+        display: none;
+    }
+
+    .muzey-right {
+        width: 100%;
+    }
+}
+
+
+
+@media screen and (max-width:874px) {
+    .title-m {
+        font-size: 35px;
+    }
+}
+
+
+@media screen and (max-width:603px) {
+    .title-m {
+        font-size: 30px;
+    }
+
+    .muzey-inner {
+        padding: 25px;
+    }
+}
+
+@media screen and (max-width:514px) {
+    .title-m {
+        font-size: 25px;
+    }
+
+    .muzey-inner {
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width:419px) {
+    .title-m {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .muzey-inner {
+        padding: 25px;
+    }
+}

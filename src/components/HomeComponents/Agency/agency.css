@@ -1,0 +1,109 @@
+.agency {
+    width: 100%;
+    background-image: url('https://www.madaniymeros.uz/img/rightbgs.1cfd966f.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #1da998;
+    padding: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-left-text p{
+    line-height: normal !important;
+}
+.agency-inner {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    gap: 10px
+}
+
+.agency-left {
+    width: 70%;
+}
+
+.agency-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.title {
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.agency-title {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 25px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.agency-left p {
+    color: white;
+    letter-spacing: 1px;
+    font-size: 18px;
+    line-height: 27px;
+}
+
+.btns {
+    width: 100%;
+    display: flex;
+    margin-top: 25px;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.btns .more {
+    margin: 0;
+    max-width: -webkit-fill-available;
+}
+
+.age {
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    letter-spacing: 1px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width:1045px){
+    .agency-inner{
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .agency-left{
+        width: 100%;
+    }
+    .agency-right .title{
+        font-size: 35px;
+    }
+    .agency-title{
+        display: none;
+    }
+    .agency-left p{
+        text-align: center;
+    }
+}
+@media screen and (max-width:522px) {
+    .agency-right .title{
+        font-size: 25px;
+    }
+    .agency-left p{
+        line-height: 22px;
+        font-size: 17px;
+    }
+}

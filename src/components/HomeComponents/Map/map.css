@@ -1,0 +1,232 @@
+.map-m {
+    background: linear-gradient(180deg, #009b89, #1da998 26.56%);
+}
+
+.inside {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://madaniymeros.uz/img/naqsh.b3da6cb7.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 25px 0;
+    position: relative;
+}
+
+.map-inner {
+    background-color: white;
+    border-radius: 7px;
+    height: auto;
+    padding-bottom: 25px;
+}
+
+.dark .map-inner {
+    background-color: #333;
+}
+
+.dark .map-content {
+    background: none;
+}
+
+.map-title {
+    padding: 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    width: 100%;
+}
+.map-title .title {
+    color: black;
+}
+
+.dark .map-title .title {
+    color: white;
+}
+.map-content{
+    gap:15px;
+}
+.map-title .title span {
+    font-size: 29px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.map-title .title p {
+    font-size: 20px;
+}
+
+.map-m .container {
+    position: relative;
+}
+
+.map-content {
+    background: url('https://www.madaniymeros.uz/img/bgshadow.d6c9710e.png');
+    padding: 20px 0;
+    background-repeat: no-repeat;
+}
+
+#map {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#map>div {
+    width: 100% !important;
+}
+
+.ymaps-2-1-79-map .ymaps-2-1-79-i-ua_js_yes .ymaps-2-1-79-map-bg .ymaps-2-1-79-islets_map-lang-ru {
+    height: 350px;
+}
+
+.map-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.map-img img {
+    width: 100%;
+    height: 310px;
+}
+
+.map-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.map-content iframe {
+    width: 100%;
+}
+
+.map-content .map-img {
+    width: 100%;
+}
+
+.locations {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.locations ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 400px;
+    overflow: auto;
+    width: 100%;
+}
+.locations .title{
+    width: 100%;
+}
+
+.locations ul::-webkit-scrollbar {
+    width: 6px;
+}
+
+.locations ul::-webkit-scrollbar-track {
+    background: none;
+    margin: 0 30px;
+}
+
+.locations ul::-webkit-scrollbar-thumb {
+    background: #349af8;
+    border-radius: 7px;
+    background-clip: padding-box;
+}
+
+.locations ul li {
+    cursor: pointer;
+    background: #f7f7f7;
+    border-radius: 5px;
+    padding: 12px 18px;
+    width: 98%;
+}
+
+.dark .locations ul li {
+    color: black;
+}
+
+.locations li span {
+    font-size: 17px;
+    color: #878787;
+    margin-bottom: 10px;
+}
+
+.local.active,
+.local.active span {
+    background: #349af8;
+    color: white;
+}
+
+.locations li .loc-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.agency-right .title {
+    color: white !important;
+}
+.dark .locations .local.active .loc-title{
+    color: white;
+}
+.dark .locations .title{
+    color: white;
+}
+@media screen and (max-width:1000px) {
+    .map-content {
+        flex-direction: column;
+    }
+
+    .map-content .map-img,
+    .map-content img {
+        height: auto;
+    }
+    .mpp{
+        height: 350px !important;
+    }
+    .locations {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    .locations{
+        font-size: 15px;
+    }
+    .locations li .loc-title{
+        font-size: 19px;
+    }
+    .locations li span{
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+}
+@media screen and (max-width:585px) {
+    .map-title {
+        flex-direction: column;
+    }
+
+    .map-title .title {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .map-title .title span {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+@media screen  and (max-width:406px){
+    .map-title .title span{
+        font-size: 23px;
+    }
+    .map-title .title p{
+        font-size: 17px !important;
+    }
+}
